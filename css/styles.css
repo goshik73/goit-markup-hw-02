@@ -1,5 +1,5 @@
 :root {
-  --bgc: #f5f5f5;
+  --bgc: #ffffff;
   --secondary-bgc: #f5f4fa;
   --accent-color: #2196f3;
   --primery-text-color: #212121;
@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: var(--bgc);
   color: var(--primery-text-color);
   font-family: "Roboto", sans-serif;
 }
@@ -34,6 +35,9 @@ body {
 /* цвет героя и футера фон bgc: #2f303a; */
 
 /* heder */
+.header {
+  background-color: #ffffff;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -92,7 +96,7 @@ body {
 }
 .hero-btn {
   font-family: "Roboto";
-  background-color: #188ce8;
+  background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
   font-weight: 700;
@@ -105,7 +109,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
-  background: #2196f3;
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -142,6 +146,12 @@ body {
   color: var(--secondary-text-color);
 }
 /* team */
+.team {
+  background-color: var(--secondary-bgc);
+}
+.team-item {
+  background-color: var(--bgc);
+}
 .team-title,
 .activity-title {
   font-weight: 700;
@@ -162,6 +172,9 @@ body {
   color: var(--secondary-text-color);
 }
 /* portfolio */
+.portfolio-list a {
+  text-decoration: none;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
