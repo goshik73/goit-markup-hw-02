@@ -12,6 +12,20 @@ body {
   color: var(--primery-text-color);
   font-family: "Roboto", sans-serif;
 }
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* основной цвет текста color: #212121; */
 /* вторичный цвет текста color: #757575; */
 /* цвет активации  color: #2196F3; */
@@ -63,16 +77,6 @@ body {
 .list-link:focus {
   color: var(--accent-color);
 }
-.header-list,
-.activity-list,
-.benefits-list,
-.team-list,
-.portfolio-btn,
-.portfolio-list,
-.footer-list {
-  list-style: none;
-}
-
 /* hero*/
 .hero,
 .footer {
@@ -98,11 +102,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.hero-btn:active {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 .btn {
   font-family: "Roboto";
   font-weight: 500;
@@ -119,20 +125,20 @@ body {
   color: #ffffff;
 }
 /* benefits */
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--primery-text-color);
 }
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /* team */
 .team-title,
